@@ -124,3 +124,10 @@
     color: white;
     background-color: black;
 }
+.login a{
+    border: 30px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
