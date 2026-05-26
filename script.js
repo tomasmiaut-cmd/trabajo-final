@@ -82,3 +82,27 @@ function eliminarProducto(index){
 
     actualizarCarrito();
 }
+$(document).ready(function() {
+        $('#login-form').on('submit', function(event) {
+            event.preventDefault();
+
+            const user = $('#username').val();
+            const pass = $('#password').val();
+
+            const validUser = "tomas";
+            const validPass = "miau";
+
+            if (user === validUser && pass === validPass) {
+                $('#error-message').addClass('d-none');
+                alert('¡Bienvenido, ' + user + '! Login exitoso.');
+                    
+                    // Aquí normalmente redirigirías a otra página, ej:
+                    // window.location.href = "dashboard.html";
+            } else {
+                    // Si es incorrecto, mostrar el mensaje de error
+                    $('#error-message').removeClass('d-none');
+                    // Opcional: limpiar la contraseña
+                    $('#password').val('');    
+            }
+        });
+    });
