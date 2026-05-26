@@ -1,0 +1,126 @@
+.header{
+   background-color: blueviolet;
+   margin-bottom: 25px;
+}
+.cabeza h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: -5px;
+    
+}
+.cabeza p{
+    color: white;
+    font-style: italic;
+}
+.cabeza h2{
+    color: white;
+    font-size: 28px;
+}
+.fila{
+    background-color: yellow;
+}
+.cartonera figure{
+    position: relative;
+}
+.cartonera a{
+    background-color: gray;
+    color: white;
+    padding: 7px 15px;
+    min-width: 150px;
+    display: inline-table;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 100px;
+    top: 50;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cartonera h4{
+    color: red;
+}
+.cartonera img{
+    width: 100%;
+    transition: all .5s ease-out;
+}
+.cartonera{
+    background-color: white;
+    box-shadow: 0px 5px 25px rgb(0 0 0 / 10%);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding: 20px 20px 25px 20px;
+}
+
+.carrito-btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+.carrito{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+    transition: 0.4s;
+    z-index: 2000;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.carrito.activo{
+    right: 0;
+}
+
+.carrito-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.carrito-cabeza button{
+    border: none;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+.item-carrito{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item-carrito h5{
+    margin: 0;
+}
+
+.item-carrito button{
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+.carrito-pie{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.button{
+    border: 50px;
+}
+.footer{
+    color: white;
+    background-color: black;
+}
